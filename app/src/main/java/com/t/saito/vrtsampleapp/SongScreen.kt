@@ -28,7 +28,7 @@ data class Song(
         fun sample(num: Int) = Song(
             imageUrl = "https://picsum.photos/id/$num/200/300",
             title = "Dynamite",
-            artist = "BTS"
+            artist = "TBS"
         )
 
         val samples = (1..10).map { sample(it) }

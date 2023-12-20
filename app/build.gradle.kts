@@ -64,10 +64,10 @@ dependencies {
     implementation(libs.ui.graphics)
     implementation(libs.ui.tooling.preview)
     implementation(libs.material3)
-    implementation("com.airbnb.android:showkase:1.0.0-beta13")
+    implementation(libs.android.showkase)
     implementation(libs.androidx.ui.test.junit4.android)
-    ksp("com.airbnb.android:showkase-processor:1.0.0-beta13")
-    implementation("io.coil-kt:coil-compose:2.5.0")
+    ksp(libs.showkase.processor)
+    implementation(libs.coil.compose)
 
     testImplementation(libs.junit)
     testImplementation(libs.test.parameter.injector)

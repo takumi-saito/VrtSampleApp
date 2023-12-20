@@ -36,7 +36,7 @@ class ComposeScreenShotTests {
     @Test
     fun checkSettingsScreen() {
         checkComposeScreen(
-            screenName = "SettingsScreen",
+            screenName = "SongListScreen",
             content = {
                 SongListScreen(
                     songs = Song.samples,

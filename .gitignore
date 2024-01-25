@@ -8,4 +8,6 @@
 .externalNativeBuild
 .cxx
 local.properties
-/actions-runner
+/actions-runner.reg
+.reg/*
+!.reg/expected

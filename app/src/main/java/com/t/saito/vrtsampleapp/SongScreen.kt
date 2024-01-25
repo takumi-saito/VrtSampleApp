@@ -27,8 +27,8 @@ data class Song(
     companion object {
         fun sample(num: Int) = Song(
             imageUrl = "https://picsum.photos/id/$num/200/300",
-            title = "Dynamite",
-            artist = "BTS"
+            title = "DynamiteDynamiteDynamiteDynamite",
+            artist = "TBSTBSTBSTBSTBSTBS"
         )
 
         val samples = (1..10).map { sample(it) }

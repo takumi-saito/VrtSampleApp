@@ -58,8 +58,12 @@ class ComposeScreenShotTests {
         }
 
         composeTestRule.onRoot().captureRoboImage(
-            filePath = "$DEFAULT_ROBORAZZI_OUTPUT_DIR_PATH/$screenName.png",
+            filePath = "$ROBORAZZI_OUTPUT_DIR_PATH/$screenName.png",
             roborazziOptions = roborazziOptions
         )
+    }
+
+    companion object {
+        private const val ROBORAZZI_OUTPUT_DIR_PATH = "./../__screenshots__"
     }
 }

@@ -9,7 +9,6 @@
     "addIgnore": true
   },
   "plugins": {
-    "reg-keygen-git-hash-plugin": {},
     "reg-notify-github-plugin": {
       "prComment": true,
       "prCommentBehavior": "default",

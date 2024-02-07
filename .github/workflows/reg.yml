@@ -3,10 +3,7 @@ name: Visual Regression Testing
 ## プルリクエストのスクリーンショットを保存するワークフロー
 on:
   pull_request:
-    types:
-      - opened
-    branches:
-      - main
+    types: [opened, reopened]
 
 jobs:
   reg-screenshot-test:

@@ -36,7 +36,7 @@ jobs:
       - name: workaround for detached HEAD
         if: ${{ github.event_name == 'pull_request' }}
         run: |
-          git checkout ${GITHUB_HEAD_REF#refs/heads/} || git checkout -b ${GITHUB_HEAD_REF#refs/heads/} && git pull
+          git checkout ${GITHUB_HEAD_REF#refs/heads/} || git checkout -b ${GITHUB_HEAD_REF#refs/heads/} && git pull origin ${GITHUB_REF#refs/heads/}
       - name: create the current snapshot
         run: |
           ./gradlew recordRoborazziDebug --stacktrace

@@ -1,6 +1,11 @@
 # .github/workflows/reg.yml
 
-on: [push]
+on:
+  pull_request:
+    types:
+      - opened
+    branches:
+      - main
 
 jobs:
   build:
@@ -18,10 +23,10 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-      - name: Use Node.js v10
+      - name: Use Node.js v12
         uses: actions/setup-node@v1
         with:
-          node-version: "10.x"
+          node-version: "12.x"
       - name: npm install, build, and test
         run: |
           npm i

@@ -1,16 +1,19 @@
-# .github/workflows/reg.yml
+name: Visual Regression Testing2
 
 on:
   pull_request:
     types: [opened, reopened]
 
 jobs:
-  build:
+  reg-screenshot-test:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+
     permissions:
       actions: read # for downloading artifacts
       contents: write # for pushing screenshot-diff to companion branch
       pull-requests: write # for creating a comment on pull requests
+
     steps:
       - uses: actions/checkout@v2
         with:

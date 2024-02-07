@@ -30,7 +30,9 @@ jobs:
         uses: gradle/gradle-build-action@87a9a15658c426a54dd469d4fc7dc1a73ca9d4a6 # v2.10.0
         with:
           gradle-version: wrapper
-
+      - name: workaround for detached HEAD
+        run: |
+          git checkout ${GITHUB_REF#refs/heads/} || git checkout -b ${GITHUB_REF#refs/heads/} && git pull origin ${GITHUB_REF#refs/heads/}
       - name: create the current snapshot
         run: |
           ./gradlew recordRoborazziDebug --stacktrace

@@ -43,4 +43,4 @@ jobs:
           ./gradlew recordRoborazziDebug --stacktrace
       - name: run reg-suit
         run: |
-          npx reg-suit run
+          npx reg-suit run --test

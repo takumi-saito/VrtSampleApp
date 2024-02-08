@@ -20,6 +20,13 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+      - name: Use Node.js v12
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - name: npm install, build, and test
+        run: |
+          npm i
       - name: Set up JDK 17
         uses: actions/setup-java@387ac29b308b003ca37ba93a6cab5eb57c8f5f93 # v4.0.0
         with:
@@ -43,10 +50,10 @@ jobs:
           ./gradlew recordRoborazziDebug --stacktrace
       - name: Run reg-suit1
         run: |
-          reg-suit run --test
+          npx reg-suit run --test
       - name: Run reg-suit2
         run: |
-          reg-suit sync-expected && reg-suit compare && reg-suit publish -n
+          npx reg-suit sync-expected && npx reg-suit compare && npx reg-suit publish -n
 
       # GitHub Page公開元ブランチへレポートをpush
       - name: deploy report to github page

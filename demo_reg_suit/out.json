@@ -1,0 +1,1 @@
+{"failedItems":["SongListScreen.png"],"newItems":[],"deletedItems":[],"passedItems":["sample.png"],"expectedItems":["sample.png","SongListScreen.png"],"actualItems":["sample.png","SongListScreen.png"],"diffItems":["SongListScreen.png"],"actualDir":"actual","expectedDir":"expected","diffDir":"diff"}

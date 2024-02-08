@@ -2,9 +2,6 @@ name: Visual Regression Testing
 
 ## プルリクエストのスクリーンショットを保存するワークフロー
 on:
-  push:
-    branches:
-      - demo_reg_suit
   pull_request:
     types: [opened, reopened]
 

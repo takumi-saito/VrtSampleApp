@@ -41,9 +41,12 @@ jobs:
       - name: create the current snapshot
         run: |
           ./gradlew recordRoborazziDebug --stacktrace
-      - name: Run reg-suit
+      - name: Run reg-suit1
         run: |
-          yarn run reg-suit sync-expected && yarn run reg-suit compare && yarn run reg-suit publish -n
+          reg-suit run --test
+      - name: Run reg-suit2
+        run: |
+          reg-suit sync-expected && reg-suit compare && reg-suit publish -n
 
       # GitHub Page公開元ブランチへレポートをpush
       - name: deploy report to github page

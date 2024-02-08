@@ -15,7 +15,7 @@
       "prComment": true,
       "prCommentBehavior": "default",
       "setCommitStatus": false,
-      "shortDescription": true,
+      "shortDescription": true
     }
   }
 }

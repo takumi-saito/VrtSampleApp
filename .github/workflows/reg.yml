@@ -2,6 +2,9 @@ name: Visual Regression Testing
 
 ## プルリクエストのスクリーンショットを保存するワークフロー
 on:
+  push:
+    branches:
+      - demo_reg_suit
   pull_request:
     types: [opened, reopened]
 
@@ -70,3 +73,6 @@ jobs:
             reg-suit report
             https://takumi-saito.github.io/VrtSampleApp/${{github.head_ref}}
           edit-mode: replace
+      - name: Run reg-suit publish
+        run: |
+          yarn run reg-suit publish -n

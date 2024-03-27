@@ -1,7 +1,7 @@
 This is a demo app for Android visual regression testing using roborazzi and reg-suit.
 
 ### Demos
-| Demo | ScreenShot |
+| Demo | image |
 |:---:|:---:|
 | [Demo PR part 1 roborazzi](https://github.com/takumi-saito/VrtSampleApp/pull/2) |<img width="926" alt="スクリーンショット 2024-03-28 3 00 37" src="https://github.com/takumi-saito/VrtSampleApp/assets/14815586/e81be284-989e-4554-bdb6-710995a043e2"> |
 | [Demo PR part 2 roborazzi & reg-suit](https://github.com/takumi-saito/VrtSampleApp/pull/16) | <img width="921" alt="スクリーンショット 2024-03-28 3 00 48" src="https://github.com/takumi-saito/VrtSampleApp/assets/14815586/9892d5be-4924-4a78-a4b4-3fcfcdfa16e0"> |
